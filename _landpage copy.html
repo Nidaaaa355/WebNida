@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Sepatu Maju Bersama</title>
+    <style>
+        /*Ini adalah internal css*/
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+        header{
+            background-color: #1e3a5f;
+            text-align: center;
+            padding: 20px 0 ;
+            color: white;
+        }
+        nav{
+            background-color: #355c7d;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#f0f4f8;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color:  #bbc7d1;;
+        }
+        .hero{
+            text-align: center;
+            padding: 50px 0;
+            height: 400px;
+            color: white;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            /* background-color: rgb(244, 170, 170);*/
+            background: url("https://i.pinimg.com/1200x/d3/11/8b/d3118bdd4ac3efaca62784ac2e271f40.jpg") no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .services{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galeri img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .galeri img:hover{
+            transform: scale(1.05);
+        }
+
+        .service{
+            flex: 1;
+            min-width: 250px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba (0,0,0,0.1);
+        }
+
+        .service h3{
+            color: #1e3a5f;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        
+        input, 
+        textarea{
+            width: 97%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #bfc9d6;
+            border-radius: 5px;
+            background: #f7fbff;
+        }
+
+        button {
+            background: #1e3a5f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #355c7d;
+
+        }
+        footer{
+            text-align: center;
+            background: #1e3a5f ;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header id="Kembali">
+        <h1>Selamat Datang di PT Sepatu Maju Bersama </h1>
+        <p>Langkah pasti bersama sepatu berkualitas dari kami.</p>
+    </header>
+    <nav>
+            <a href="#Beranda">Beranda</a>
+            <a href="#Produk">Produk</a>
+            <a href="#Layanan">Layanan</a>
+            <a href="#Kontak">Kontak</a>
+    </nav>
+    <section class="hero" id="Beranda">
+            <h1>Melangkah Bersama Kualitas Terbaik</h1>
+    </section>
+
+    <section class="container" id="Produk">
+    <h2 style="text-align: center; margin-bottom: 20px;">Produk PT Sepatu Maju Bersama</h2>
+    <div class="galeri">
+        <img src="https://i.pinimg.com/1200x/8d/37/2f/8d372f11c7378dea155499b9d6fcbb51.jpg" alt="Produk 1">
+        <img src="https://i.pinimg.com/1200x/9e/68/44/9e6844ee12c34f015f295586085cafe1.jpg" alt="Produk 2">
+        <img src="https://i.pinimg.com/1200x/ed/b2/5d/edb25d1be295390618b7e1ef95111ce2.jpg" alt="Produk 3">
+        <img src="https://i.pinimg.com/736x/1f/1a/db/1f1adb7c77a211fe8359d9750a196479.jpg" alt="Produk 4">
+        <img src="https://i.pinimg.com/736x/c4/dc/63/c4dc63f96f75a14d3e3bbb63127c6881.jpg" alt="Produk 5">
+        <img src="https://i.pinimg.com/736x/da/ec/2a/daec2a7fc304c249868e036c34da0a9a.jpg" alt="Produk 6">
+    </div>
+    </section>
+
+    <section class="container" id="Layanan">
+            <h2 style="text-align: center;">Layanan Kami</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Perawatan Sepatu</h3>
+                    <p>Membersihkan, memperbaiki, atau merawat sepatu Anda agar kembali maksimal</p>
+                </div>
+                <div class="service">
+                    <h3>Custom Sepatu</h3>
+                    <p>Melayani perubahan warna, desain, dan ukuran sesuai permintaan</p>
+                </div>
+                <div class="service">
+                    <h3>Produksi Sepatu</h3>
+                    <p>Mengerjakan pesanan produksi sepatu secara profesional dan berkualitas</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="container" id="Kontak">
+        <h2 style="text-align: center;">Hubungi Kami</h2>
+        <form action="">
+            <label>Nama</label>
+            <input type="text" placeholder="Masukan Nama Anda"/>
+            <label>Email</label>
+            <input type="email" placeholder="Masukan Email Anda"/>
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Tulis Pesan Anda Disini"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+
+    <footer >
+        <p>&copy;copyright😒 2025 PT Doa Ibu</p>
+        <nav>
+            <a href="#Kembali">kembali</a>
+        </nav>
+    </footer>
+</body>
+</html>
